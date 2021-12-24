@@ -1,0 +1,749 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #1f2235;
+}
+
+a {
+  color: #eb4555;
+  text-decoration: none;
+}
+
+.container {
+  transition: all 0.2s ease-in-out;
+}
+
+/* scrollbar */
+
+::-webkit-scrollbar {
+  width: 2.5px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px transparent;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #eb4555;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a9a9a9;
+}
+
+/* start header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 120px;
+  margin-bottom: 10px;
+}
+
+header nav {
+  color: #eb4555;
+  font-size: 22px;
+}
+
+header nav li {
+  display: inline-block;
+  margin: 0 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  border-bottom: 1px solid #1f2235;
+  border-bottom-style: dashed;
+}
+
+header nav li:hover {
+  color: white;
+}
+
+.logo h1 {
+  color: #eb4555;
+  font-family: "Nunito", sans-serif;
+  font-size: 40px;
+}
+
+.socialAcc a {
+  color: #eb4555;
+}
+
+.socialAcc i {
+  font-size: 22px;
+  margin: 0 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  padding: 5px;
+}
+
+.socialAcc i:hover {
+  color: #ffffff;
+}
+
+/* burgerMenu */
+
+.burgerMenu {
+  display: none;
+  position: fixed;
+  right: 10px;
+  top: 35px;
+  z-index: 10;
+}
+
+.burgerMenu > span {
+  padding: 1.5px 13px;
+  background-color: #eb4555;
+  margin: 6px;
+  display: block;
+  transition: all ease-in-out 0.2s;
+}
+.burgerMenu-opened {
+  position: fixed;
+  right: 10px;
+  top: 35px;
+  z-index: 10;
+}
+
+.burgerMenu-opened > span {
+  padding: 1.5px 13px;
+  background-color: #eb4555;
+  margin: 6px;
+  display: block;
+  transition: all ease-in-out 0.2s;
+}
+
+.burgerMenu-opened span:first-child {
+  opacity: 0;
+  margin-top: -2px;
+}
+
+.burgerMenu-opened .second {
+  transform: rotate(45deg) translate(4px, 8px);
+}
+
+.burgerMenu-opened .third {
+  transform: rotate(-45deg) translate(-1px, -2px);
+}
+
+/* aside */
+aside a {
+  color: #eb4555;
+}
+.aside01 {
+  position: fixed;
+  top: -300px;
+  transition: all 0.4s ease-in-out;
+  text-align: center;
+  padding: 50px;
+  width: 100%;
+}
+
+.aside02 {
+  background-color: #eee;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  padding: 50px;
+  transition: all 0.5s ease-in-out;
+}
+
+.aside01 nav {
+  color: #eb4555;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.aside01 nav li {
+  display: block;
+  margin: 8px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.aside02 nav {
+  color: #eb4555;
+  font-size: 22px;
+  margin-bottom: 50px;
+}
+
+.aside02 nav li {
+  display: block;
+  margin: 8px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+/* start intro */
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 50px;
+  margin-top: 50px;
+}
+
+.introPic img {
+  width: 380px;
+  height: 330px;
+  border-radius: 15px;
+}
+
+.phoneImg {
+  display: none;
+}
+
+.introTxt p:first-child {
+  font-size: 50px;
+  font-family: "Nunito", sans-serif;
+  color: #eb4555;
+  font-weight: bold;
+}
+
+.introTxt p {
+  color: #eee;
+  font-size: 30px;
+  margin-top: 5px;
+}
+
+.introTxt button {
+  color: #eb4555;
+  background-color: #1f2235;
+  border: #eb4555 2px solid;
+  border-radius: 2px;
+  padding: 8px 15px;
+  font-size: 25px;
+  margin-top: 20px;
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, #ffeaea 0px 1px 3px -1px;
+  width: 70%;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.introTxt button:hover {
+  color: #1f2235;
+  background-color: #eb4555;
+  border-radius: 5px;
+  transform: translate(0px, 10%);
+}
+.keepscrolling {
+  margin-top: 50px;
+}
+
+.keepscrolling h1 {
+  color: #eb4555;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+}
+
+/* arrow */
+.direction {
+  color: white;
+  margin-top: 40px;
+}
+
+.direction span {
+  color: white;
+  font-size: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #eb4555;
+}
+
+.direction span i {
+  margin: -50px 0;
+}
+
+.firstFlesh {
+  -webkit-animation: fadein 2s infinite;
+  -moz-animation: fadein 2s infinite; /* Firefox < 16 */
+  -o-animation: fadein 2s infinite; /* Opera < 12.1 */
+  display: block;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* start about me */
+
+.aboutMe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  padding: 10px 50px;
+}
+.aboutMe .info h2 {
+  color: #eb4555;
+  font-size: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+}
+.aboutMe .info p {
+  color: #f7f7f7;
+}
+.aboutMe .info h2::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 250px;
+  margin-left: 10px;
+  background-color: #eb4555;
+}
+
+/* start myskills */
+.mySkills {
+  margin-top: 50px;
+  color: #eb4555;
+}
+.mySkills .title h2 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.skill-icons {
+  background: #f7f7f7;
+  padding: 50px 20px;
+  border: 1px transparent;
+  border-radius: 5px;
+  margin: 50px 10%;
+  display: grid;
+  grid-gap: 50px 10%;
+  grid-template-columns: auto auto auto;
+}
+
+.skill-icons h3 {
+  color: #1f2235;
+  font-size: 12px;
+  margin: 0 5px;
+}
+
+.skill-icons > div {
+  display: flex;
+  align-items: center;
+}
+
+/* start portfolio */
+
+.portfolio {
+  background-color: #f7f7f7;
+}
+
+.portfolioStart {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+#portfolioPic {
+  width: 350px;
+}
+
+.portfolioTitle {
+  color: #a9a9a9;
+  font-size: 30px;
+}
+
+/* sart my work */
+
+.Mywork > div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+  border-top: 2px solid #eee;
+  padding: 50px 0;
+}
+
+.Mywork .info {
+  width: 40%;
+}
+
+.Mywork .image img {
+  width: 60%;
+}
+
+.Mywork > div h2 {
+  margin-bottom: 20px;
+  font-size: 32px;
+  color: #1f2235;
+}
+
+.Mywork > div p {
+  color: #a9a9a9;
+  margin-bottom: 20px;
+}
+
+.Mywork > div .visit-btn {
+  padding: 10px 40px;
+  background-color: white;
+  border: 1px solid #eee;
+  font-weight: bold;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  margin-top: 50px;
+  width: 30%;
+  color: #1f2235;
+  font-size: 16px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* start contact */
+
+.contactMe {
+  background-color: #f7f7f7;
+  border-top: 1px solid #eee;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.chat .icons i {
+  font-size: 22px;
+}
+
+.sendMsg h2 {
+  color: #1f2235;
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.sendMsg p {
+  color: #1f2235;
+  font-weight: bold;
+}
+
+.sendMsg button {
+  background-color: #f7f7f7;
+  color: #1f2235;
+  border: #1f2235 1px solid;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 17px;
+  padding: 8px;
+  width: 35%;
+  margin-top: 12px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  transition: all ease-in-out 0.3s;
+}
+
+.sendMsg button:hover {
+  background-color: #1f2235;
+  color: #f7f7f7;
+}
+
+.email p {
+  color: #a9a9a9;
+  margin-top: 5px;
+}
+
+/* start inbox */
+.chat {
+  position: fixed;
+  top: 200px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: ease-in-out all 0.2s;
+}
+
+.inbox {
+  background-color: #f7f7f7;
+  border: #eee 1px solid;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  width: 30rem;
+  height: 30rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.firstMsg,
+.firstMsg2 {
+  opacity: 0;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border: 1px solid transparent;
+  padding: 15px;
+  position: fixed;
+  top: 0px;
+  right: 0;
+  width: 100%;
+}
+
+.inbox .head .name {
+  margin: 0 40px 0 0;
+  color: #f7f7f7;
+}
+
+.inbox .head i {
+  margin: 0 0 0 40px;
+  color: #f7f7f7;
+  cursor: pointer;
+}
+
+.inbox .body .me p {
+  background-color: rgb(223, 222, 222);
+  padding: 10px;
+  margin: 10px;
+  display: block;
+  border: 1px solid transparent;
+  border-radius: 10px;
+}
+
+.inbox .body .me span {
+  background-color: #eb4555;
+  color: #f7f7f7;
+  padding: 10px;
+  margin: 10px;
+  display: block;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  text-align: right;
+}
+
+.foot .options {
+  display: grid;
+  bottom: 0;
+  grid-template-columns: auto auto;
+  border-top: 1px solid #eee;
+  padding: 10px 0;
+  visibility: hidden;
+}
+
+.foot .options > div {
+  display: inline-block;
+  background-color: #f7f7f7;
+  color: #1f2235;
+  padding: 8px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  margin: 5px 10px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.foot .options > div:hover {
+  transform: scale3d(1.1, 1.1, 1.1);
+}
+
+.burgerMenuChat {
+  z-index: 10;
+  cursor: pointer;
+}
+
+.burgerMenuChat > span {
+  padding: 1.5px 13px;
+  background-color: #ffffff;
+  margin: 6px;
+  display: block;
+  transition: all ease-in-out 0.2s;
+}
+
+.burgerMenuChat span:nth-child(1) {
+  transform: rotate(45deg) translate(4px, 8px);
+}
+.burgerMenuChat span:nth-child(2) {
+  transform: rotate(-45deg) translate(-1px, -2px);
+}
+/* start media */
+
+@media only screen and (max-width: 600px) {
+  header {
+    display: none;
+  }
+
+  aside {
+    display: block;
+  }
+
+  .burgerMenu {
+    display: block;
+  }
+
+  .burgerMenu-opened {
+    display: block;
+  }
+
+  .socialAcc i:hover {
+    color: #1f2235;
+  }
+
+  /* start content */
+  .intro {
+    display: block;
+    margin-top: 120px;
+    padding: 20px;
+  }
+
+  .aboutMe .info h2::after {
+    width: 150px;
+  }
+
+  .introTxt p:first-child {
+    font-size: 40px;
+  }
+
+  .introTxt p {
+    margin: 10px 0 15px;
+    font-size: 20px;
+  }
+
+  .introTxt button {
+    width: 70%;
+    margin-bottom: 20px;
+  }
+
+  .keepscrolling {
+    margin-top: 20px;
+  }
+  /* about me */
+  .aboutMe {
+    padding: 20px;
+  }
+
+  /* start skill-icons */
+
+  .skill-icons {
+    grid-template-columns: auto auto;
+    grid-gap: 20px 30px;
+    margin: 20px;
+    padding: 20px;
+  }
+
+  /* start portfolio */
+
+  #portfolioPic {
+    width: 200px;
+    display: block;
+  }
+  .portfolioStart {
+    display: block;
+  }
+
+  .img-portfolio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .portfolioStart h2 {
+    text-align: center;
+  }
+
+  /* start myWork */
+
+  .Mywork > div {
+    display: block;
+  }
+
+  .Mywork .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Mywork .info {
+    width: 100%;
+    padding: 20px;
+  }
+  .Mywork > div h2 {
+    text-align: center;
+  }
+
+  .Mywork > div button,
+  .Mywork > div .visit-btn {
+    display: block;
+    margin: 10px auto;
+    width: 50%;
+  }
+
+  .contactMe {
+    display: block;
+    padding: 30px 20px;
+  }
+
+  .sendMsg button {
+    width: 45%;
+    margin-bottom: 10px;
+  }
+
+  .email p {
+    text-align: right;
+  }
+
+  /* start chat */
+  .chat {
+    height: 100%;
+    top: 0;
+    display: block;
+  }
+
+  .head {
+    width: 100%;
+    position: absolute;
+    background-color: #eb4555;
+  }
+
+  .inbox {
+    height: 100%;
+    width: 100%;
+    margin-top: 50px;
+    border-radius: 0;
+  }
+
+  .foot {
+    width: 100%;
+    background-color: #f7f7f7;
+    overflow: scroll;
+  }
+}
