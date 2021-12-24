@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Nunito:ital,wght@1,200&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Youssef Elasraoui</title>
+  </head>
+
+  <body>
+    <div class="container" id="container">
+      <!-- start header -->
+      <header>
+        <nav id="nav">
+          <ul>
+            <a href="#portfolio"><li>Work</li></a>
+            <a href="#mySkills"><li>Skills</li></a>
+            <a href="#contactMe"><li>Contact</li></a>
+          </ul>
+        </nav>
+        <div class="socialAcc" id="socialAcc">
+          <a href="https://www.instagram.com/youssef_softweb/" target="blank"
+            ><i class="fa fa-instagram"></i
+          ></a>
+          <a href="https://twitter.com/FrontendYoussef" target="blank">
+            <i class="fa fa-twitter"></i
+          ></a>
+          <a
+            href="https://www.youtube.com/channel/UC8OA3QRL3y6k9olnHPXBDhw"
+            target="blank"
+            ><i class="fa fa-youtube-play"></i
+          ></a>
+          <a href="https://github.com/YoussefSoftware" target="blank"
+            ><i class="fa fa-github-alt"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/youssef-frontend-b1326721a/"
+            target="blank"
+            ><i class="fa fa-linkedin"></i
+          ></a>
+        </div>
+      </header>
+
+      <!-- start aside   -->
+      <div class="burgerMenu" id="burgerMenu">
+        <span></span>
+        <span class="second"></span>
+        <span class="third"></span>
+      </div>
+
+      <aside class="aside01" id="aside">
+        <nav id="nav">
+          <ul>
+            <a href="#portfolio" onclick="closeDropDownMenu()"
+              ><li id="work">Work</li></a
+            >
+            <a href="#mySkills" onclick="closeDropDownMenu()"
+              ><li id="skills">Skills</li></a
+            >
+            <a href="#contactMe" onclick="closeDropDownMenu()"
+              ><li id="contact">Contact</li></a
+            >
+          </ul>
+        </nav>
+        <div class="socialAcc" id="socialAcc">
+          <a href="https://www.instagram.com/youssef_softweb/" target="blank"
+            ><i class="fa fa-instagram"></i
+          ></a>
+          <a href="https://twitter.com/FrontendYoussef" target="blank">
+            <i class="fa fa-twitter"></i
+          ></a>
+          <a
+            href="https://www.youtube.com/channel/UC8OA3QRL3y6k9olnHPXBDhw"
+            target="blank"
+            ><i class="fa fa-youtube-play"></i
+          ></a>
+          <a href="https://github.com/YoussefSoftware" target="blank"
+            ><i class="fa fa-github-alt"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/youssef-frontend-b1326721a/"
+            target="blank"
+            ><i class="fa fa-linkedin"></i
+          ></a>
+        </div>
+      </aside>
+      <!-- start content  -->
+
+      <div class="content">
+        <div class="intro">
+          <div class="introTxt">
+            <p>Hi, I’m Youssef <br />A Web Developer.</p>
+            <p>Front End Developer / UI/UX Designer</p>
+            <button id="seePortfolio">MY PORTFOLIO</button>
+          </div>
+          <div class="introPic">
+            <!-- <img src="images/softweblogo.jpg" alt="sorry" /> -->
+          </div>
+        </div>
+        <div class="keepscrolling">
+          <div class="direction">
+            <span class="firstFlesh"><i class="fa fa-angle-down"></i></span>
+          </div>
+        </div>
+
+        <div class="aboutMe" data-aos="fade-right">
+          <div class="info">
+            <h2>About Me</h2>
+            <p>
+              My name is Youssef Elasraoui, A Front End Developer located in
+              Morroco.<br />
+              I enjoy creating things that live on the Internet. <br />
+              I have strong knowledge of HTML5 / CSS3 / Js / React and also Node
+              Js . <br />
+              And I'm currently working as a freelancer.
+            </p>
+          </div>
+          <div class="myPic"></div>
+        </div>
+        <div class="mySkills" id="mySkills">
+          <div class="title"><h2>MY SKILLS</h2></div>
+          <div class="skill-icons" data-aos="fade-up">
+            <div class="html">
+              <img
+                src="https://img.icons8.com/color/48/000000/html-5--v1.png"
+              />
+              <h3>HTML5</h3>
+            </div>
+            <div class="css">
+              <img src="https://img.icons8.com/color/48/000000/css3.png" />
+              <h3>CSS3</h3>
+            </div>
+            <div class="js">
+              <img
+                src="https://img.icons8.com/color/48/000000/javascript--v1.png"
+              />
+              <h3>JavaScript(ES6)</h3>
+            </div>
+            <div class="react">
+              <img
+                src="https://img.icons8.com/color/48/000000/react-native.png"
+              />
+              <h3>React</h3>
+            </div>
+            <div class="git">
+              <img src="https://img.icons8.com/color/48/000000/git.png" />
+              <h3>Git</h3>
+            </div>
+            <div class="figma">
+              <img src="https://img.icons8.com/office/48/000000/figma.png" />
+              <h3>Figma</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio" id="portfolio">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path
+              style="border: 1px 0 0 0 solid #1f2235"
+              fill="#1f2235"
+              fill-opacity="1"
+              d="M0,288L48
+              ,256C96,224,192,160,288,138.7C384,117,480,139
+              ,576,170.7C672,203,768,245,864,272C960,299,1056,309
+              ,1152,277.3C1248,245,1344,171,1392,133.3L1440,96L1440
+              ,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0
+              ,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+            ></path>
+          </svg>
+          <div class="portfolioStart">
+            <div class="img-portfolio">
+              <img
+                data-aos="fade-in"
+                src="images/portfolioWelcom.svg"
+                alt="something went wrong"
+                id="portfolioPic"
+              />
+            </div>
+            <h2 class="portfolioTitle">PORTFOLIO</h2>
+          </div>
+          <div class="Mywork">
+            <!-- succedApp -->
+            <div class="seccedApp" data-aos="fade-in">
+              <div class="image">
+                <img
+                  src="images/screens/succedImg.jpg"
+                  alt="something went wrong"
+                />
+              </div>
+              <div class="info">
+                <h2>Succed</h2>
+                <p>
+                  A platform for manage your grades and help you reach you GOAL.
+                </p>
+                <a
+                  type="btn"
+                  href="https://succeed01.netlfy.app/"
+                  target="blank"
+                  class="visit-btn"
+                  >Visit</a
+                >
+              </div>
+            </div>
+            <!-- buttonGame -->
+            <div class="buttonGame" data-aos="fade-in">
+              <div class="image">
+                <img
+                  src="images/screens/buttonImg.jpg"
+                  alt="something went wrong"
+                />
+              </div>
+              <div class="info">
+                <h2>BUTTON GAME</h2>
+                <p>It's simply a QUIZE game</p>
+                <a
+                  type="btn"
+                  href="https://button-game.netlify.app/"
+                  class="visit-btn"
+                  target="blank"
+                  >Visit</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contactMe" id="contactMe">
+          <div class="sendMsg">
+            <h2>In need of a designer/developer?</h2>
+            <p>◉ I'm currently available for freelance work.</p>
+            <button id="contactBtn">Contact Me</button>
+          </div>
+          <div class="email">
+            <p class="email">youssefsoftware21@gmail.com</p>
+            <p class="phone">+212667114487</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="chat" id="chat">
+      <div class="inbox" id="inbox">
+        <div class="head">
+          <div class="name"></div>
+          <div class="icons">
+            <!-- <i class="fa fa-close" id="chatClose"></i> -->
+            <div class="burgerMenuChat" id="chatClose">
+              <span class="second"></span>
+              <span class="third"></span>
+            </div>
+          </div>
+        </div>
+        <div class="body">
+          <div class="me" id="me">
+            <p class="firstMsg">Hi I'm Youssef Bot</p>
+            <p class="firstMsg2">How can I help you?</p>
+          </div>
+        </div>
+        <div class="foot">
+          <div class="options">
+            <div class="op1" id="op1">I'd like to hire you</div>
+            <div class="op2" id="op2">Just want to say hello</div>
+            <div class="op3" id="op3">Interested in mentorship</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
